@@ -1,0 +1,86 @@
+{% load staticfiles %}
+<!DOCTYPE>
+<html>
+<head>
+<meta name = "author" content="CindyWen" />
+    <meta http-equiv = "content-type" content = "text/html; charset = utf-8" />
+<title>
+Cindy Wen
+</title>
+<style type="text/css">
+footer p{
+    font-family:"STKaiti";
+    color:grey;
+    margin: 0;
+    padding: 10px 0;
+    position:absolute;
+    top:100%;
+    left:40%;
+    }
+    
+body{
+    background:url("{% static  'homepage/images/cindy.jpeg'%}");
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;   
+}
+textarea {
+    width: 200px;
+    height: 150px;
+    font-size: 16pt;
+}
+
+#maindiv {
+    width: 1100px;
+    margin: 5% auto;
+  border:#BEBEBE solid 1px;
+  text-align:center;
+ 
+}
+
+
+}
+</style>
+</head>
+
+
+
+<body>
+<div id="maindiv">
+<h1>
+About Me
+</h1>
+<p>
+My name is Songzi Wen. My English teacher in primary school gave me "Cindy" as my English name and I did not change it till now.<br/>
+I am a junior student in University of Wisconsin-Madison, and my major is Computer Science。</br>
+I started WaterSun in summer. The name is from my surname.<br/>
+The day I begun WaterSun was very cold, and I was ill that day, so I made the style of WaterSun serene and sentimental, which is not my normal style.<br/>
+<p>
+<p>
+Fell in love Jay Chou because two Opus concerts in summer. The purity and warmth in song Yuanyouhui is my eternal yearning.<br/>
+And I seriously worship a person whose name is Stephen Brown. He is a blingbling shining cute person who uses "manatee" as his class examples.<br/>
+So interested in Physics, in boundless universe, how small as a human being . Also like reading history, in the long river of time, how humble is one's emotion.<br/>
+Luyao's book, The Ordinary World, is a book which has big impact on me. Xiaoxia Tian, the main character in the book, gives me strength and confidence to be a kind and warm girl.</br>
+</p>
+
+<form id="f1" onsubmit="return display()" method="post">
+<p> Your name: <input type="text" name="text1" autofocus /> </p>
+<p> Leave a message to me: <textarea name="textarea1"></textarea> </p>
+<p> <input type="submit" name="submit1" value="Submit" onclick="return display()" /> </p>
+</form>
+
+<p>
+email：swen9@wisc.edu<br/>weChat：cindywen93
+</p>
+
+</div>
+
+<footer>
+     <p>
+    水日&#169;2014 Copyright 温松子Cindy Wen
+     </p>
+</footer>
+
+
+</body>
+</html>

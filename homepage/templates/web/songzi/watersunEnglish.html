@@ -1,0 +1,132 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name = "author" content="CindyWen" />
+    <meta http-equiv = "content-type" content = "text/html; charset = utf-8" />
+
+    <title>
+        watersun
+    </title>
+
+    {% load staticfiles %}
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+
+        body{
+            background:url("{% static  'homepage/images/mountain.jpg'%}");
+            background-size:103%;
+            background-repeat:no-repeat;
+            background-attachment：fixed;
+        }
+
+        h1{
+            font-family:"Satisfy", cursive;
+            margin-top:10px;
+            margin-bottom:-5px;
+            font-size: 100px;
+        }
+
+        ul.myMenu{
+            position:absolute;
+            top:35%;
+            right:0.5%;
+            margin:0 auto;
+            padding:0;
+            text-align:right;
+            line-height:50px;
+            list-style-type:none;
+        }
+
+        ul.myMenu li a {
+            font-family:"Satisfy", cursive;
+            font-size:120%;
+            text-decoration:none;
+            color:black;
+        }
+
+        ul.myMenu li a:hover {
+            border-bottom: black solid 1px;
+        }
+
+        footer p{
+            font-family:"STKaiti", cursive;
+            position:fixed;
+            left:40%;
+            bottom:-1%;
+            height:22px;
+            width:100%;
+            color:grey;
+        }
+
+
+        .language{
+            position:absolute;
+            top:0%;
+            right:1%
+        }
+
+        .language pre a{
+
+            text-decoration:none;
+            color:grey;
+        }
+
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+<div class="language">
+<pre>
+<a href="/homepage/watersun/">中文</a> <a href="/homepage/">English</a>
+</pre>
+</div>
+
+
+<h1>
+    WaterSun
+</h1>
+
+<pre>
+Live to late teens, just realized that I was living at the bottom of a well，only have seen a dustpan-size sky. 
+Go over the Xigao Mountain, cross the Zhuangzi mountain, then stride over a river and walk one hundred and twenty miles. 
+Is another world ———— that are sky with no bound and ground with thousands of mountains and rivers.
+
+</pre>
+
+
+<nav id="menu">
+    <ul class="myMenu">
+        <li><a href="/homepage/music/">Music</a></li>
+        <li><a href="/homepage/photo/">Photos of Cindy</a></li>
+        <li><a href="/homepage/friends/">Friends</a></li>
+        <li><a href="/homepage/blog/">Iridescent Dream</a></li>
+        <li><a href="/homepage/myselfEnglish/">About Cindy</a></li>
+    </ul>
+</nav>
+
+
+<footer>
+    <p>
+        WaterSun&#169;2014 Copyright 温松子Cindy Wen
+    </p>
+</footer>
+
+
+<audio autoplay loop>
+    <source src="{% static  'homepage/music/yuanfang.m4a'%}" type="audio/x-aac"/>
+    <source src="{% static  'homepage/music/yuanfang.mp3'%}" type="audio/mpeg"/>
+    <source src="{% static  'homepage/music/yuanfang.ogg'%}" type="audio/ogg"/>
+</audio>
+
+
+</body>
+</html>
