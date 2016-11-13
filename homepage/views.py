@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpResponseRedirect
+
 
 def index(request):
     return render(request, 'web/songzi/watersunEnglish.html')
@@ -18,5 +20,6 @@ def watersun(request):
 def chen(request):
     return render(request, 'web/chen/zhiyang-chen.html')
 
-def chen(request):
-    return render(request, 'web/chen/zhiyang-chen.html')
+def fayeSong(request):
+    return HttpResponseRedirect('https://www.youtube.com/watch?v=KDGMU6sdVBE')
+

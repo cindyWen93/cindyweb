@@ -15,5 +15,6 @@ urlpatterns = [
     url(r'^watersun/$', views.watersun, name='watersun'),
     url(r'^chen/$', views.chen, name='chen'),
     url(r'^blog/', include('blog.urls')),
+    url(r'^faye/$', views.fayeSong, name='faye'),
 
 ]

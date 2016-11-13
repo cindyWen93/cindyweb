@@ -10,6 +10,10 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/publish/$', views.post_publish, name='post_publish'),
     url(r'^post/(?P<pk>\d+)/remove/$', views.post_remove, name='post_remove'),
     url(r'^post/(?P<pk>\d+)/comment/$', views.add_comment_to_post, name='add_comment_to_post'),
+    url(r'^post/(?P<pk>\d+)/addgifts/$', views.post_add_gifts, name='post_add_gifts'),
+    url(r'^post/(?P<pk>\d+)/addgifts/addlikes/$', views.post_add_likes, name='post_add_likes'),
+    url(r'^post/(?P<pk>\d+)/addgifts/addeggs/$', views.post_add_eggs, name='post_add_eggs'),
+    url(r'^post/(?P<pk>\d+)/addgifts/addflowers/$', views.post_add_flowers, name='post_add_flowers'),
     url(r'^comment/(?P<pk>\d+)/approve/$', views.comment_approve, name='comment_approve'),
     url(r'^comment/(?P<pk>\d+)/remove/$', views.comment_remove, name='comment_remove'),
 ]
