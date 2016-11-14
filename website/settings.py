@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'p%pm6u8943edpza5d(div2g-bx-xir&do-=zn8ze)lrebs8wik'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['www.songziwen.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

@@ -64,6 +64,12 @@ def post_add_eggs(request, pk):
     post.save()
     return redirect('post_detail', pk=pk)
 
+def post_add_knees(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    post.knees = post.knees + 1
+    post.save()
+    return redirect('post_detail', pk=pk)
+
 def post_add_likes(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.likes = post.likes + 1

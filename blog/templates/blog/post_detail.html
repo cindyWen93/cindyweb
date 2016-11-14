@@ -22,7 +22,7 @@
 
 
 
-    <a class="btn btn-default" href="{% url 'post_add_gifts' pk=post.pk %}">give gifts</a>
+    <a class="btn btn-default" href="{% url 'post_add_gifts' pk=post.pk %}">Express feelings</a>
     {% for comment in post.comments.all %}
         {% if user.is_authenticated or comment.approved_comment %}
             <div class="comment">

@@ -14,6 +14,7 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/addgifts/addlikes/$', views.post_add_likes, name='post_add_likes'),
     url(r'^post/(?P<pk>\d+)/addgifts/addeggs/$', views.post_add_eggs, name='post_add_eggs'),
     url(r'^post/(?P<pk>\d+)/addgifts/addflowers/$', views.post_add_flowers, name='post_add_flowers'),
+    url(r'^post/(?P<pk>\d+)/addgifts/addknees/$', views.post_add_knees, name='post_add_knees'),
     url(r'^comment/(?P<pk>\d+)/approve/$', views.comment_approve, name='comment_approve'),
     url(r'^comment/(?P<pk>\d+)/remove/$', views.comment_remove, name='comment_remove'),
 ]

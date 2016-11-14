@@ -10,6 +10,7 @@ class Post(models.Model):
     likes = models.IntegerField(default = 0)
     eggs = models.IntegerField(default=0)
     flowers = models.IntegerField(default=0)
+    knees = models.IntegerField(default=0)
 
     def publish(self):
         self.published_date = timezone.now()
