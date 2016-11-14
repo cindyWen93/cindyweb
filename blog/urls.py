@@ -17,4 +17,5 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/addgifts/addknees/$', views.post_add_knees, name='post_add_knees'),
     url(r'^comment/(?P<pk>\d+)/approve/$', views.comment_approve, name='comment_approve'),
     url(r'^comment/(?P<pk>\d+)/remove/$', views.comment_remove, name='comment_remove'),
+
 ]
