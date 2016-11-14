@@ -7,37 +7,39 @@
     /*background-attachment：fixed;*/
 /*}*/
 
+
+
+.page-header {
+    background:url('../images/endless.jpg');
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-attachment：fixed;
+    margin-top: -5px;
+    padding: 10px 10px 630px 10px;
+    border: none !important;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    margin-top: 10;
+    color: #FFFFFF;
+    font-size: 60pt;
+    text-decoration: none;
+}
+
 .my-word {
     position:absolute;
     left:28%;
     top:30%;
 }
 .my-word h1 {
-    font-size:78pt;
+    font-size:80pt;
     color: #FFFFFF;
 }
-
-.page-header {
-    hight:600px;
-    background:url('../images/endless.jpg');
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-attachment：fixed;
-    margin-top: -5px;
-    padding: 10px 10px 10px 10px;
-}
-
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    margin-top: 10;
-    color: #FFFFFF;
-    font-size: 48pt;
-    text-decoration: none;
-}
-
 .content {
     margin-top: 0px;
     margin-left: 40px;
 }
+
 
 h1, h2, h3, h4 {
     font-family: 'Pacifico', cursive;
@@ -79,7 +81,6 @@ h1, h2, h3, h4 {
 
 .comment a{
     font-color: #000000;
-
 }
 
 .gifts p {
